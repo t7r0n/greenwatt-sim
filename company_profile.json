@@ -1,0 +1,56 @@
+{
+  "company": "DeepAware AI",
+  "company_slug": "deepaware-ai",
+  "repo": "greenwatt-sim",
+  "package": "greenwatt_sim",
+  "cli": "greenwatt-sim",
+  "title": "Greenwatt Sim",
+  "problem": "DeepAware promises a 30% energy waste cut and a 15% pilot validation, but the only public artifact backing those numbers is a single paragraph claim on the YC launch page. For a sales motion targeting mid market operators (who don't have Google's published TPU efficiency papers to lean on) the missing primitive is a reproducible, vendor neutral, simulator backed benchmark that lets a prospective operator answer \"what would DeepAware actually save me?\" before signing.",
+  "direction": "A drop in GPU cluster + wholesale electricity simulator that lets any operator paste 7 days of nvidia smi + wholesale market CSVs and see exactly what a DeepAware style RL scheduler would have done - and saved - in their own facility.",
+  "why": "Mid market data center buyers run RFPs. A reproducible sim attached to the proposal beats any landing page percentage. This is the leverage point between YC traction and Series A defensibility.",
+  "terms": [
+    "deepaware",
+    "promises",
+    "energy",
+    "waste",
+    "pilot",
+    "validation",
+    "public",
+    "artifact",
+    "backing",
+    "numbers",
+    "single",
+    "paragraph",
+    "claim",
+    "launch",
+    "sales",
+    "motion",
+    "targeting",
+    "market"
+  ],
+  "metrics": [
+    "deepaware_coverage",
+    "promises_risk",
+    "energy_precision",
+    "waste_latency"
+  ],
+  "failure_modes": [
+    "deepaware_drift",
+    "promises_gap",
+    "energy_misroute",
+    "waste_blindspot"
+  ],
+  "sources": [
+    "https://www.ycombinator.com/launches/OBl-deepaware-automation-for-next-gen-ai-data-centers",
+    "https://www.deepawareai.com/product",
+    "https://www.deepawareai.com/",
+    "https://www.ycombinator.com/companies/deepaware-ai/jobs",
+    "https://www.deepawareai.com/knowledge-base/ireland-data-center-regulation",
+    "https://www.greenai.institute/profile/jerry-huang",
+    "https://www.greenai.institute/news/2025-Second-Green-AI-Summit-Concludes",
+    "https://www.greenai.institute/news/green-ai-summit-concludes-with-major-steps-toward-sustainable-development",
+    "https://sustainable.harvard.edu/person/jerry-huang/",
+    "https://www.linkedin.com/in/jerryh01/"
+  ],
+  "github_url": "https://github.com/t7r0n/greenwatt-sim"
+}

@@ -1,0 +1,2 @@
+[console_scripts]
+greenwatt-sim = greenwatt_sim.cli:main
