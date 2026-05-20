@@ -2,19 +2,39 @@
 
 A drop in GPU cluster + wholesale electricity simulator that lets any operator paste 7 days of nvidia smi + wholesale market CSVs and see exactly what a DeepAware style RL scheduler would have done - and saved - in their own facility.
 
-## Why This Exists
+![Greenwatt Sim working dashboard](outputs/project_working.svg)
 
-DeepAware promises a 30% energy waste cut and a 15% pilot validation, but the only public artifact backing those numbers is a single paragraph claim on the YC launch page. For a sales motion targeting mid market operators (who don't have Google's published TPU efficiency papers to lean on) the missing primitive is a reproducible, vendor neutral, simulator backed benchmark that lets a prospective operator answer "what would DeepAware actually save me?" before signing.
+## Why it exists
 
-## What It Builds
+DeepAware promises a 30% energy waste cut and a 15% pilot validation, but the only public artifact backing those numbers is a single paragraph claim on the YC launch page.
 
-- Replays synthetic `deepaware` and `promises` cases against the project's evidence rules.
-- Scores `deepaware_coverage`, `promises_risk`, and `energy_precision` so regressions are visible in CSV and JSON.
-- Plants `deepaware drift` and `promises gap` failures as negative controls.
-- Writes citation-locked decision claims; unsupported claims fail verification.
-- Exports a review dashboard and demo pack for `greenwatt-sim` without hosted services.
+Most internal demos stop at a pretty chart. This repository is built around the harder part: a repeatable path from fixture, to failure, to evidence, to the operator action a serious team would actually trust.
 
-## Local Run
+## What is inside
+
+- A deterministic replay harness tuned around deepaware, promises, and energy.
+- Company-specific strategy code in `src/greenwatt_sim/strategy.py`, not just README-level customization.
+- Citation-locked reports where every decision claim has to point back to a generated evidence ID.
+- Two visual artifacts generated from the latest run: `outputs/project_working.svg` and `outputs/evidence_map.svg`.
+- A portable demo pack with JSON, CSV, Markdown, HTML, SVG, and benchmark artifacts.
+
+![Greenwatt Sim evidence map](outputs/evidence_map.svg)
+
+## Signals it measures
+
+- `deepaware coverage`
+- `promises risk`
+- `energy precision`
+- `waste latency`
+
+## Failure modes it plants
+
+- deepaware drift
+- promises gap
+- energy misroute
+- waste blindspot
+
+## Run it locally
 
 ```bash
 uv sync
@@ -23,16 +43,14 @@ uv run pytest -q
 uv run ruff check .
 ```
 
-## Outputs
+## Outputs worth opening
 
-- `outputs/analysis.json`
-- `outputs/scenario_report.csv`
-- `outputs/decision_report.md`
-- `outputs/evidence_packet.md`
-- `outputs/domain_rubric.json`
-- `outputs/failure_matrix.md`
-- `outputs/trace_graph.mmd`
 - `outputs/dashboard.html`
+- `outputs/project_working.svg`
+- `outputs/evidence_map.svg`
+- `outputs/operator_brief.md`
+- `outputs/decision_report.md`
+- `outputs/strategy_model.json`
 - `outputs/demo_pack.zip`
 
 ## Sources
@@ -50,4 +68,4 @@ uv run ruff check .
 
 ## Boundary
 
-This repository uses synthetic fixtures only. It has no credentials, no customer data, no outreach data, and no dependency on a hosted API.
+Everything runs locally against synthetic fixtures. There are no credentials, no customer records, no outreach files, and no hosted API dependency.
