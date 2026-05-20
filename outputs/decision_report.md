@@ -1,6 +1,6 @@
 # Decision Report: Greenwatt Sim
 
-A drop in GPU cluster + wholesale electricity simulator that lets any operator paste 7 days of nvidia smi + wholesale market CSVs and see exactly what a DeepAware style RL scheduler would have done - and saved - in their own facility.
+A drop in GPU cluster + wholesale electricity simulator that lets any operator paste 7 days of nvidia smi + wholesale market CSVs and see exactly what a DeepAware style RL scheduler would have done — and saved — in their own facility.
 
 ## Evidence-Grounded Findings
 
