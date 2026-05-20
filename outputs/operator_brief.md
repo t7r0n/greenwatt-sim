@@ -1,6 +1,6 @@
 # Operator Brief: DeepAware AI
 
-DeepAware AI gets a local, deterministic pressure test around deepaware, promises, and energy. The useful part is not the dashboard; it is the repeatable evidence path from fixture to failure to operator action.
+DeepAware AI gets a local, deterministic pressure test around deepaware, promises, and energy. The useful part is the repeatable evidence path from fixture to failure to operator action.
 
 ## Highest-leverage checks
 
