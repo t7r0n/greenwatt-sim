@@ -1,5 +1,5 @@
 scenario,cases,blocks,reviews,mean_severity,mean_score,top_evidence_id,recommended_action
-deepaware evidence replay,36,4,5,2.611,0.4123,ev_0044,block release until cited evidence is regenerated
-energy regression harness,36,3,5,2.528,0.3992,ev_0110,open a regression issue with trace and benchmark delta
-promises boundary probe,36,3,4,2.528,0.3787,ev_0121,route to reviewer with evidence packet
-waste operator packet,36,4,5,2.556,0.4009,ev_0055,accept only if decision claims cite fixture evidence
+claim regression harness,36,3,5,2.528,0.4082,ev_0066,open a regression issue with trace and benchmark delta
+evidence replay,36,4,5,2.611,0.432,ev_0000,block release until cited evidence is regenerated
+handoff boundary probe,36,3,4,2.528,0.3967,ev_0077,route to reviewer with evidence packet
+review operator packet,36,4,5,2.556,0.4095,ev_0099,accept only if decision claims cite fixture evidence

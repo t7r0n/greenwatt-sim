@@ -1,68 +1,57 @@
 {
   "repo": "greenwatt-sim",
-  "company": "DeepAware AI",
+  "company": "Greenwatt Sim",
   "rubric_axes": [
     {
-      "axis": "deepaware_coverage",
+      "axis": "evidence_coverage",
       "failures": [
-        "deepaware_drift"
+        "evidence_drift"
       ],
       "evidence_required": true
     },
     {
-      "axis": "promises_risk",
+      "axis": "handoff_risk",
       "failures": [
-        "promises_gap"
+        "handoff_gap"
       ],
       "evidence_required": true
     },
     {
-      "axis": "energy_precision",
+      "axis": "claim_precision",
       "failures": [
-        "energy_misroute"
+        "claim_misroute"
       ],
       "evidence_required": true
     },
     {
-      "axis": "waste_latency",
+      "axis": "review_latency",
       "failures": [
-        "waste_blindspot"
+        "review_blindspot"
       ],
       "evidence_required": true
     }
   ],
   "archetypes": [
     {
-      "name": "deepaware evidence replay",
-      "trigger": "deepaware signal changes while promises context is stale",
+      "name": "evidence replay",
+      "trigger": "source evidence changes while workflow context is stale",
       "expected": "block release until cited evidence is regenerated"
     },
     {
-      "name": "promises boundary probe",
-      "trigger": "promises handoff crosses a policy or trust boundary",
+      "name": "handoff boundary probe",
+      "trigger": "handoff crosses a policy or trust boundary",
       "expected": "route to reviewer with evidence packet"
     },
     {
-      "name": "energy regression harness",
-      "trigger": "energy behavior regresses against the last accepted fixture",
+      "name": "claim regression harness",
+      "trigger": "claim behavior regresses against the last accepted fixture",
       "expected": "open a regression issue with trace and benchmark delta"
     },
     {
-      "name": "waste operator packet",
-      "trigger": "waste output needs a human-readable audit packet",
+      "name": "review operator packet",
+      "trigger": "review output needs a human-readable audit packet",
       "expected": "accept only if decision claims cite fixture evidence"
     }
   ],
-  "sources_used": [
-    "https://www.ycombinator.com/launches/OBl-deepaware-automation-for-next-gen-ai-data-centers",
-    "https://www.deepawareai.com/product",
-    "https://www.deepawareai.com/",
-    "https://www.ycombinator.com/companies/deepaware-ai/jobs",
-    "https://www.deepawareai.com/knowledge-base/ireland-data-center-regulation",
-    "https://www.greenai.institute/profile/jerry-huang",
-    "https://www.greenai.institute/news/2025-Second-Green-AI-Summit-Concludes",
-    "https://www.greenai.institute/news/green-ai-summit-concludes-with-major-steps-toward-sustainable-development",
-    "https://sustainable.harvard.edu/person/jerry-huang/",
-    "https://www.linkedin.com/in/jerryh01/"
-  ]
+  "sources_used": []
 }

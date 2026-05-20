@@ -1,7 +1,7 @@
 [project]
 name = "greenwatt-sim"
 version = "0.1.0"
-description = "A drop in GPU cluster + wholesale electricity simulator that lets any operator paste 7 days of nvidia smi + wholesale market CSVs and see ex"
+description = "A drop in GPU cluster + wholesale electricity simulator that lets any operator paste 7 days of nvidia smi + wholesale ma"
 readme = "README.md"
 requires-python = ">=3.12"
 authors = [

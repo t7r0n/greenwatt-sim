@@ -53,19 +53,6 @@ uv run ruff check .
 - `outputs/strategy_model.json`
 - `outputs/demo_pack.zip`
 
-## Sources
-
-- https://www.ycombinator.com/launches/OBl-deepaware-automation-for-next-gen-ai-data-centers
-- https://www.deepawareai.com/product
-- https://www.deepawareai.com/
-- https://www.ycombinator.com/companies/deepaware-ai/jobs
-- https://www.deepawareai.com/knowledge-base/ireland-data-center-regulation
-- https://www.greenai.institute/profile/jerry-huang
-- https://www.greenai.institute/news/2025-Second-Green-AI-Summit-Concludes
-- https://www.greenai.institute/news/green-ai-summit-concludes-with-major-steps-toward-sustainable-development
-- https://sustainable.harvard.edu/person/jerry-huang/
-- https://www.linkedin.com/in/jerryh01/
-
 ## Boundary
 
 Everything runs locally against synthetic fixtures. There are no credentials, no customer records, no outreach files, and no hosted API dependency.
